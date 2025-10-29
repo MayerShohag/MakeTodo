@@ -1,0 +1,9 @@
+{
+  "students": [
+    {
+      "name": "fd",
+      "completeStudy": false,
+      "id": 1
+    }
+  ]
+}
