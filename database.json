@@ -1,9 +1,24 @@
 {
   "students": [
     {
-      "name": "fd",
+      "name": "HTML",
       "completeStudy": false,
       "id": 1
+    },
+    {
+      "name": "CSS",
+      "completeStudy": false,
+      "id": 2
+    },
+    {
+      "name": "React",
+      "completeStudy": false,
+      "id": 4
+    },
+    {
+      "name": "JavaScript",
+      "completeStudy": false,
+      "id": 5
     }
   ]
 }

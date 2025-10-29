@@ -88,7 +88,10 @@ function App() {
                               Add Tasks
                          </h1>
                          <hr className="border-b border-0" />
-                         <form onSubmit={postStudent} className="my-4 flex gap-2">
+                         <form
+                              onSubmit={postStudent}
+                              className="my-4 flex gap-2"
+                         >
                               <input
                                    type="text"
                                    placeholder="Add Task"
@@ -128,10 +131,10 @@ function App() {
                               </button>
                          </div>
                          <div>
-                              <ul>
+                              <ul className="h-80 overflow-auto">
                                    {students.map((student) => (
                                         <li
-                                             className="flex mt-5 items-center border justify-between rounded-sm p-2"
+                                             className="flex mt-4 items-center border justify-between rounded-sm p-2"
                                              key={student.id}
                                         >
                                              <div className="flex items-center gap-2 ">
@@ -147,7 +150,9 @@ function App() {
                                                             )
                                                        }
                                                   />
-                                                  <span className="text-2xl font-semibold">{student.name} </span>
+                                                  <span className="text-2xl font-semibold">
+                                                       {student.name}{" "}
+                                                  </span>
                                              </div>
                                              <button
                                                   onClick={() =>
@@ -159,14 +164,14 @@ function App() {
                                              </button>
                                         </li>
                                    ))}
-                                   <hr className="border-b border-0 my-4" />
-                                   <button
-                                        className="btn btn-soft btn-error"
-                                        onClick={deleteAllStudent}
-                                   >
-                                        Delete All
-                                   </button>
                               </ul>
+                              <hr className="border-b border-0 my-4" />
+                              <button
+                                   className="btn btn-soft btn-error"
+                                   onClick={deleteAllStudent}
+                              >
+                                   Delete All
+                              </button>
                          </div>
                     </div>
                </section>
